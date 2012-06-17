@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/Singularity/!svn/ver/54/SingularityV2.0/src/com/singularity/clover/activity/entity
+END
+TextRecordViewModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/activity/entity/TextRecordViewModel.java
+END
+ListItemOBJView.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/activity/entity/ListItemOBJView.java
+END
+TaskOverViewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/activity/entity/TaskOverViewActivity.java
+END
+TaskOverViewActivityHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/activity/entity/TaskOverViewActivityHelper.java
+END
+TaskViewActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/activity/entity/TaskViewActivity.java
+END
+TaskViewActivityHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/activity/entity/TaskViewActivityHelper.java
+END
+ReviewView.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/activity/entity/ReviewView.java
+END

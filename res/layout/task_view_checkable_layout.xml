@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singularity.clover.util.drag.DragViewGroup
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/task_view_checkable_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:longClickable="false"
+  >
+  
+  <CheckBox
+  	android:id="@+id/task_view_checkable_check"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:button="@drawable/task_view_checkable_check_check_bg"
+  	/>
+  	
+  <EditText
+  	android:layout_weight="1"
+  	android:id="@+id/task_view_checkable_item"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:longClickable="false"
+  	android:maxWidth="200dp"
+  	android:hint="@string/goal_name"
+  	android:background="@drawable/task_view_edit_bg"
+  	/>
+  	
+  <ImageButton
+  	android:id="@+id/task_view_checkable_remove"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_checkable_button_remove_bg"
+  	android:onClick="onOBJRemove"
+  	android:visibility="gone"
+  	/>
+  
+</com.singularity.clover.util.drag.DragViewGroup>

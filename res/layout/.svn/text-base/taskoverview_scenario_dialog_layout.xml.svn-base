@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:padding="5dp"
+  >
+  
+  <EditText
+  	android:layout_weight="1"
+  	android:id="@+id/task_overview_scenario_dialog_edit"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:hint="@string/scenario_dialog_name_hint"
+  	/>
+  
+  <ImageButton
+  	android:id="@+id/task_overview_scenario_dialog_color_picker"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:onClick="onBtnColorPicker"
+  	android:padding="7dp"
+  	android:layout_margin="3dp"
+  	/>
+  	
+  <Button
+  	android:id="@+id/task_overview_scenario_dialog_save"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:onClick="onBtnScenarioSave"
+  	android:text="@string/save_button"
+  	/>
+  
+  <Button
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:onClick="onBtnScenarioCancel"
+  	android:text="@string/cancel_button"
+  	/>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/surface_5"
+  >
+ 	 
+  <TextView
+  	android:id="@+id/task_overview_surface_proverb"
+  	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_toRightOf="@+id/task_overview_surface_calendar"
+ 	android:text="Hello Proverb"
+ 	android:layout_marginTop="60dp"
+ 	android:textSize="16sp"
+ 	android:textColor="#ffffffff"
+	android:typeface="serif"
+ 	android:layout_marginLeft="30dp"
+ 	android:layout_marginRight="20dp"
+ 	android:visibility ="gone"
+ 	/>
+ 	
+  <TextView
+  	android:id="@+id/task_overview_surface_review"
+  	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@+id/task_overview_surface_calendar"
+ 	android:text="Hello Review"
+ 	android:layout_marginTop="20dp"
+ 	android:textSize="16sp"
+ 	android:textColor="#ffffffff"
+	android:typeface="serif"
+ 	android:layout_marginLeft="30dp"
+ 	android:layout_marginRight="20dp"
+ 	/>
+	
+  <com.singularity.clover.activity.entity.ReviewView
+  	android:id="@+id/task_overview_surface_review_canvas"
+  	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_below="@+id/task_overview_surface_review"
+ 	android:layout_marginTop="10dp"
+ 	android:layout_marginLeft="30dp"
+ 	android:layout_marginRight="20dp"
+ 	/>
+ 	
+  <ImageButton
+  	 android:id="@+id/task_overview_surface_mind_fragment"
+  	 android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_alignParentRight="true"
+ 	 android:layout_alignParentBottom="true"
+ 	 android:background ="@drawable/primary_button_mindfragment_bg"
+ 	 android:onClick="onBtnMindFragment"
+ 	 />
+  <ImageButton
+  	 android:id="@+id/task_overview_surface_location"
+  	 android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_alignParentRight="true"
+ 	 android:layout_alignParentBottom="true"
+ 	 android:layout_marginBottom="10dp"
+ 	 android:layout_marginRight="10dp"
+ 	 android:background ="@drawable/primary_button_location_bg"
+ 	 android:onClick="onBtnMap"
+ 	 />
+ 	  
+  <Button
+  	 android:id="@+id/task_overview_surface_calendar"
+  	 android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_alignParentLeft="true"
+ 	 android:layout_alignParentTop="true"
+ 	 android:layout_marginTop="30dp"
+ 	 android:layout_marginLeft="30dp"
+ 	 android:background="@drawable/calendar_background"
+ 	 android:onClick="onBtnCalendar"
+ 	 android:gravity="center"
+ 	 android:textSize="24sp"
+ 	 android:textColor="#ffffffff"
+ 	 />
+
+ <CheckBox
+  	 android:id="@+id/task_overview_surface_compass"
+  	 android:layout_width="48dp"
+ 	 android:layout_height="48dp"
+ 	 android:layout_alignParentRight="true"
+ 	 android:layout_alignParentBottom="true"
+ 	 android:layout_marginBottom="5dp"
+ 	 android:layout_marginRight="5dp"
+ 	 android:button="@drawable/primary_check_compass_bg"
+ 	 android:onClick="onBtnCompass"
+ 	 />
+ 	 
+ <ImageView
+ 	android:id="@+id/task_overview_surface_tutorial_compass"
+ 	android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_toLeftOf="@+id/task_overview_surface_compass"
+ 	 android:layout_alignTop="@+id/task_overview_surface_compass"
+ 	 android:src="@drawable/surface_tutorial_long_press_compass"
+ 	 	android:visibility="gone"
+ 	 />
+ 	 
+  <ImageView
+ 	 android:id="@+id/task_overview_surface_tutorial_long_press_scenario"
+ 	 android:layout_width="wrap_content"
+ 	 android:layout_height="wrap_content"
+ 	 android:layout_alignParentTop="true"
+ 	 android:layout_alignParentRight="true"
+ 	 android:layout_marginTop="100dp"
+ 	 android:layout_marginRight="5dp"
+ 	 android:src="@drawable/surface_tutorial_long_press_scenario"
+ 	 android:visibility="gone"
+ 	 />
+ 	 
+  <Button
+  	android:id="@+id/task_overview_surface_about"
+  	android:layout_width="wrap_content"
+ 	android:layout_height="wrap_content"
+ 	android:layout_toLeftOf="@+id/task_overview_surface_mind_fragment"
+ 	android:layout_marginTop="6dp"
+ 	android:layout_marginLeft="15dp"
+ 	android:text="@string/about_title"
+ 	android:background="@drawable/about_background"
+ 	android:gravity="center"
+ 	android:onClick="onAbout"
+ 	android:visibility="gone"
+ 	/>
+ 	
+</RelativeLayout>

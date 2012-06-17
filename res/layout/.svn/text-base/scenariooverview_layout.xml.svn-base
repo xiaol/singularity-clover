@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#e0e4f4"
+  android:orientation="vertical">
+  
+  <GridView 
+  	android:layout_weight="1"
+  	android:id="@+id/scenario_gridview" 
+  	android:layout_height="fill_parent" 
+  	android:layout_width="fill_parent"  
+  	android:gravity="center" 
+  	android:stretchMode="columnWidth" 
+  	android:numColumns="auto_fit" 
+  	android:columnWidth="48dp" 
+  	android:horizontalSpacing="10dp" 
+  	android:verticalSpacing="30dp"></GridView>
+    
+  <RelativeLayout
+  	android:layout_weight="4"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+ 		<ImageButton
+ 			android:id="@+id/scenario_add"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_centerVertical="true"
+ 			android:background="@drawable/scenario_button_add_bg"
+ 			/>	
+  	
+  </RelativeLayout>  
+    
+
+</LinearLayout>

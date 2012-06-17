@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/task_view_numeric_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  
+  <EditText
+  	android:id="@+id/task_view_numeric_value"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:longClickable="false"
+  	android:inputType="number"
+  	android:hint="@string/min"
+  	android:background="@drawable/task_view_edit_bg"
+  	/>
+  	
+  <ImageButton
+  	android:id="@+id/task_view_numeric_minus"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_numeric_button_minus_bg"
+  	/>
+  	
+  		
+  <FrameLayout
+ 	android:layout_weight="1"
+ 	android:id="@+id/task_view_numeric_process"
+  	android:layout_width="116dp"
+   	android:layout_height="wrap_content"
+   	android:layout_gravity="center_vertical"
+   	>
+   	  <TextView
+	   	android:id="@+id/task_view_numeric_process_text"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_gravity="center"
+	   	android:visibility="invisible"
+	   	android:textColor="#ff000000"
+	   	/>
+	   	
+	  <ImageView
+	
+	   	android:id="@+id/task_view_numeric_process_background"
+	   	android:layout_width="100dp"
+	   	android:layout_height="wrap_content"
+	   	android:background="@drawable/task_view_numeric_process"
+	   	android:layout_gravity="bottom|center"
+	   	/>  
+	  
+	  <ImageView
+	   	android:id="@+id/task_view_numeric_process_indicator"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:src="@drawable/task_view_numeric_process_indicator"
+	   	android:layout_gravity="left"
+	   	/>
+	   	
+  
+  </FrameLayout>
+  
+  <ImageButton
+  	android:id="@+id/task_view_numeric_plus"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_numeric_button_plus_bg"
+  	/>
+  
+  <EditText
+  	android:id="@+id/task_view_numeric_max"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:longClickable="false"
+  	android:inputType="number"
+  	android:hint="@string/max"
+  	android:background="@drawable/task_view_edit_bg"
+  	/>
+  	
+  <TextView
+  	android:id="@+id/task_view_numeric_slash"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="/"
+  	android:longClickable="false"
+  	android:clickable="false"
+  	android:focusable="false"
+  	android:textColor="#ff000000"
+  	/>
+ 
+  <EditText
+  	android:id="@+id/task_view_numeric_unit"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:longClickable="false"
+  	android:hint="@string/unit_hint"
+  	android:background="@drawable/task_view_edit_bg"
+  	/>
+  	
+  <ImageButton
+  	android:id="@+id/task_view_numeric_remove"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_numeric_button_remove_bg"
+  	android:visibility="gone"
+  	android:onClick="onOBJRemove"
+  	/>
+  	
+</LinearLayout>

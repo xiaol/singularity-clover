@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="fill_parent"
+  android:background="@drawable/page_background_noalpha">
+	<ImageButton android:id="@+id/record_button_create_whiteboard" 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginLeft="30dp"
+		android:layout_marginBottom="15dp"
+		android:background="@drawable/record_button_whiteboard_bg"
+		android:onClick="onNewWhiteboard"></ImageButton>
+		
+	<ImageButton android:id="@+id/record_button_create_text" 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignTop="@+id/record_button_create_whiteboard"
+		android:layout_centerHorizontal="true"
+		android:background="@drawable/record_button_text_bg"
+		android:onClick="onNewNote"	/>
+	
+	<ImageButton android:id="@+id/record_button_create_photo" 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignTop="@+id/record_button_create_text"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="30dp"
+		android:background="@drawable/record_button_photo_bg"
+		android:onClick="onTakePhoto"/>
+		
+	<!-- <ImageButton android:id="@+id/record_button_create_voice" 
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_toRightOf="@+id/record_button_create_photo"
+		android:background="@drawable/record_button_voice_bg"/>-->
+				
+	<GridView android:id="@+id/record_gridview"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_above="@+id/record_button_create_whiteboard"
+	    android:numColumns="auto_fit"
+	    android:columnWidth="64dp"
+	    android:layout_margin="20dp"
+	    android:verticalSpacing="1dp"
+	    android:horizontalSpacing="10dp"
+	    android:gravity="center"
+	    android:stretchMode="spacingWidthUniform"
+		></GridView>
+</RelativeLayout>

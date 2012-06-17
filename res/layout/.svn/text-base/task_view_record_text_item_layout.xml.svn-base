@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singularity.clover.util.drag.DragTextViewGroup
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/task_view_record_text_item_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+	<TextView
+	  android:id="@+id/task_view_record_text_item"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:maxWidth="200dp"
+	  android:text="where r u~"
+	  android:background="#00000000"
+	  android:textColor="#ff000000"
+	  />
+	  
+</com.singularity.clover.util.drag.DragTextViewGroup>

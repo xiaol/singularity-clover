@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singularity.clover.activity.notification.CalendarFrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/calendar_frame_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="#e0e4f4"
+  >
+  	
+  <com.singularity.clover.activity.notification.DragNotifierLayer
+   	android:id="@+id/calendar_drag_layer"
+   	android:layout_width="fill_parent"
+   	android:layout_height="fill_parent"
+   	android:background = "@color/transparent"
+   	>
+  </com.singularity.clover.activity.notification.DragNotifierLayer>
+   		
+  <TextView
+	 android:id="@+id/calendar_date_text"
+	 android:layout_width="fill_parent"
+	 android:layout_height="wrap_content"
+	 android:text="2011/04/08"
+	 android:gravity="center"
+	 android:background="@drawable/calendar_week_blue"
+	 android:textColor="@color/black"
+	 android:textStyle="bold"
+  	/>	
+  		
+  <LinearLayout
+  	 android:id="@+id/calendar_week_layout"
+  	 android:layout_width="fill_parent"
+  	 android:layout_height="wrap_content"
+  	 android:layout_below="@+id/calendar_date_text"
+  	 android:layout_alignLeft="@+id/calendar_date_text"
+  	 android:layout_alignRight="@+id/calendar_date_text"
+  	>
+  	
+  	<TextView
+  		android:text="@string/Sunday"
+  		android:layout_weight="1"
+  		android:layout_width="fill_parent"
+  	  	android:layout_height="fill_parent"
+  	  	android:background="@drawable/calendar_week_blue"
+  	  	android:textColor="@color/black"
+  	  	android:paddingLeft="5dp"
+  	  	/>
+  	  	
+  	<TextView
+  		android:text="@string/Monday"
+  		android:layout_weight="1"
+  		android:layout_width="fill_parent"
+  	  	android:layout_height="fill_parent"
+  	  	android:background="@drawable/calendar_week_green"
+  	  	android:paddingLeft="5dp"
+  	  	android:textColor="@color/black"
+  	  	/>
+  	  
+    <TextView
+  		android:text="@string/Tuesday"
+  		android:layout_weight="1"
+  		android:layout_width="fill_parent"
+  	  	android:layout_height="fill_parent"
+  	  	android:background="@drawable/calendar_week_green"
+		android:textColor="@color/black"
+		android:paddingLeft="5dp"
+  	  	/>
+  	  	
+  	<TextView
+  		android:text="@string/Wednesday"
+  		android:layout_weight="1"
+  		android:layout_width="fill_parent"
+  	  	android:layout_height="fill_parent"
+  	  	android:background="@drawable/calendar_week_green"
+  	  	android:textColor="@color/black"
+  	  	android:paddingLeft="5dp"
+  	  	/>
+  	  	
+  	<TextView
+  		android:text="@string/Thursday"
+  		android:layout_weight="1"
+  		android:layout_width="fill_parent"
+  	  	android:layout_height="fill_parent"
+  	  	android:background="@drawable/calendar_week_green"
+  	  	android:textColor="@color/black"
+  	  	android:paddingLeft="5dp"
+  	  	/>
+  	  	
+  	<TextView
+  		android:text="@string/Friday"
+  		android:layout_weight="1"
+  		android:layout_width="fill_parent"
+  	  	android:layout_height="fill_parent"
+  	  	android:background="@drawable/calendar_week_green"
+  	  	android:textColor="@color/black"
+  	  	android:paddingLeft="5dp"
+  	  	/>
+  	  	
+  	<TextView
+  		android:text="@string/Saturday"
+  		android:layout_weight="1"
+  		android:layout_width="fill_parent"
+  	  	android:layout_height="fill_parent"
+  	  	android:background="@drawable/calendar_week_blue"
+  	  	android:textColor="@color/black"
+  	  	android:paddingLeft="5dp"
+  	  	/>
+  	  	
+  	</LinearLayout>
+  	 
+  <GridView
+  	android:id="@+id/calendar_gridview"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_below="@+id/calendar_week_layout"
+  	android:layout_alignLeft="@+id/calendar_date_text"
+  	android:layout_alignRight="@+id/calendar_date_text"
+  	android:numColumns="7"
+  	android:horizontalSpacing="1dp" 
+  	android:verticalSpacing="1dp"
+    android:background="@color/gray"
+    android:scrollbarFadeDuration="1000"
+	></GridView>
+	
+  <com.singularity.clover.activity.notification.CalendarCanvas
+  	android:id="@+id/calendar_canvas"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout_below="@+id/calendar_week_layout"
+  	android:layout_alignLeft="@+id/calendar_date_text"
+  	android:layout_alignRight="@+id/calendar_date_text"	
+  	android:background="@color/transparent"
+  	android:visibility="gone"
+  	></com.singularity.clover.activity.notification.CalendarCanvas>
+	
+  <ViewStub
+  	android:id="@+id/calendar_task_attribute_set_layout_stub"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:layout="@layout/calendar_wizard_mode_panel_layout"
+  	android:layout_below="@+id/calendar_week_layout"
+  	android:layout_alignLeft="@+id/calendar_date_text"
+  	android:layout_alignRight="@+id/calendar_date_text"
+  	android:layout_alignBottom="@+id/calendar_gridview"
+  	android:visibility="gone"
+  	/>
+  
+  <Button
+  	android:id="@+id/calendar_task_attribute_confirm"
+  	android:text="@string/confirm_button"
+  	android:layout_width="80dp"
+  	android:layout_height="80dp"
+  	android:layout_alignRight="@+id/calendar_date_text"
+  	android:layout_alignBottom="@+id/calendar_gridview"
+  	android:gravity="center"
+  	android:textStyle="bold"
+  	android:background="@drawable/calendar_item_white"
+  	android:visibility="gone"
+  	/>
+  	
+  <com.singularity.clover.util.drag.DragDeleteZone
+	android:id="@+id/calendar_drag_delete_zone"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/task_view_rubbish_can"
+	android:layout_centerInParent="true"
+	android:visibility="gone"
+	/>
+
+  <Button
+  	 android:id="@+id/calendar_periodic_month"
+  	 android:layout_width="wrap_content"
+  	 android:layout_height="wrap_content"
+  	 android:layout_alignTop="@+id/calendar_date_text"
+  	 android:layout_alignLeft="@+id/calendar_date_text"
+  	 android:layout_alignBottom="@+id/calendar_week_layout"
+  	 android:text="Every Month"
+  	 android:background="@drawable/calendar_item_white"
+  	 android:gravity="center"
+  	 android:textStyle="bold"
+  	 android:paddingLeft="25dp"
+  	 android:paddingRight="25dp"
+  	 android:visibility="gone"
+  	 />
+  	
+  <Button
+  	 android:id="@+id/calendar_periodic_week"
+  	 android:layout_width="wrap_content"
+  	 android:layout_height="wrap_content"
+  	 android:layout_alignTop="@+id/calendar_date_text"
+  	 android:layout_alignRight="@+id/calendar_date_text"
+  	 android:layout_alignBottom="@+id/calendar_week_layout"
+  	 android:text ="Every Week"
+  	 android:background="@drawable/calendar_item_white"
+  	 android:gravity="center"
+  	 android:textStyle="bold"
+  	 android:paddingLeft="25dp"
+  	 android:paddingRight="25dp"
+  	 android:visibility="gone"
+  	 />
+</com.singularity.clover.activity.notification.CalendarFrameLayout>

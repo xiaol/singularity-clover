@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/Singularity/!svn/ver/54/SingularityV2.0/src/com/singularity/clover/entity
+END
+EntityPool.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/Singularity/!svn/ver/56/SingularityV2.0/src/com/singularity/clover/entity/EntityPool.java
+END
+Draggable.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/Singularity/!svn/ver/54/SingularityV2.0/src/com/singularity/clover/entity/Draggable.java
+END
+EntityViewModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/Singularity/!svn/ver/54/SingularityV2.0/src/com/singularity/clover/entity/EntityViewModel.java
+END
+Persisable.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/Singularity/!svn/ver/54/SingularityV2.0/src/com/singularity/clover/entity/Persisable.java
+END

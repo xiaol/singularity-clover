@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">Clover</string>
+    
+    <string name="scenario_go_out">Plan</string>
+    <string name="scenario_at_home">Place</string>
+    <string name="scenario_appointment">People</string>
+    
+    <string name="confirm_button">Confirm</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="delete_button">Delete</string>
+    <string name="save_button">Save</string>
+    <string name="yes_button">Yes</string>
+    <string name="no_button">No</string>
+    <string name="ok_button">OK</string>
+    <string name="delay_button">delay 10 minutes</string>
+    
+    <string name="date_button">Mark Date</string>
+    <string name="deadline_button">Mark Deadline</string>
+    <string name="next_button">Next</string>
+    <string name="periodic_button">Mark Periodic</string>
+    <string name="alarm_button">Mark Alarm</string>
+    
+    <string name="task_overview_delete_task_title">Delete Task with contained files ?</string>
+    <string name="task_overview_delete_scenario_title">Are you sure delete with tasks in this scenario?</string>
+    
+    <string name="task_view_basic_info_date">Date:\u0020 </string>
+    <string name="task_view_basic_info_date_to">\u0020 to\u0020 </string>
+    <string name="task_view_basic_info_alarm">Next Alarm:\u0020 </string>
+    <string name="task_view_basic_info_periodic">Next Periodic:\u0020 </string>
+    <string name="task_view_basic_info_hint">Click to edit basic info.</string>
+    <string name="task_view_basic_info_today">Today</string>
+    <string name="task_view_title">(Title)</string>
+    
+    <string name="scenario_dialog_name_hint">(Scenario name)</string>
+    
+    <string name="scenario_context_menu_delete">Delete Scenario\u0020 </string>
+    <string name="scenario_context_menu_edit">Edit Scenario\u0020 </string>
+    <string name="scenario_context_menu_add">Add new Scenario\u0020 </string>
+    <string name="scenario_context_menu_title">Scenario</string>
+    <string name="scenario_context_menu_location">Location</string>
+    
+    <string name="calendar_overview_hint">There isn\'t a task</string>
+    <string name="scenario_color_picker_title">Pick a Color:)</string>
+    
+    <string name="Monday">Mon.</string>
+    <string name="Tuesday">Tue.</string>
+    <string name="Wednesday">Wed.</string>
+    <string name="Thursday">Thu.</string>
+	<string name="Friday">Fri.</string>
+    <string name="Saturday">Sat.</string>
+    <string name="Sunday">Sun.</string>
+ 
+ 	<string-array name = "proverb_array">
+ 		<item>Love life?\n\tThen do not squander time\n\tFor that\'s the stuff life is made of.</item>
+ 		<item>You\'re here \n\tto put a dent in the universe\n\tOtherwise why else even be here?</item>
+ 		<item>Life is either a daring adventure or nothing.</item>
+ 		<item>We gather knowledge faster than we gain wisdom.</item>
+ 		<item>You are not afraid of tomorrow\n\tfor you have seen yesterday and you love today.</item>
+ 		<item>For every minute spent in organizing\n\tan hour is earned.</item>
+ 		<item>Take time to deliberate\n\tbut when the time for action arrives\n\tstop thinking and go in.</item>
+ 		<item>Time tells.</item>
+ 		<item>To achieve great things\n\ttwo things are needed\n\ta plan, and not quite enough time.</item>
+ 		<item>Dream a plan\n\tAct in daytime.</item>
+ 		<item>道.</item>
+ 		<item>To choose time is to save time.</item>
+ 		<item>Time is money \n\tbe patient to collect.</item>
+ 		<item>Today\'s task is improving me \n\t please tell us what you think.</item>
+ 	</string-array>
+ 	
+ 	<string name="note_hint">Long press to edit.\nTear the right corner to add Subtopic.</string>
+ 	
+ 	<string name="about_title">About Us</string>
+ 	<string name="about_website">Web Site</string>
+ 	<string name="about_info">Clover is a simple and practical tool for life management on mobile platform.</string>
+ 	<string name="about_info_title">Clover</string>
+ 	
+ 	<string name="toast_calendar_notification_single_tap">Long Press to indicate the alarm</string>
+ 	<string name="toast_calendar_mark_day_please">Please select a day firstly</string>
+ 	<string name="toast_calendar_periodic_prefix">Every\u0020 </string>
+ 	<string name="toast_calendar_periodic_suffix">\u0020 days</string>
+ 	<string name="toast_calendar_periodic_hint">Please select the day after start date</string>
+ 	<string name="toast_calendar_periodic_hint2">Periodic is the interval between start date and selected day</string>
+ 	<string name="toast_calendar_notificaiont_before_today_prefix">Today is\u0020 </string>
+ 	<string name="toast_calendar_periodic_month_hint">Every month</string>
+ 	<string name="toast_calendar_periodic_week_hint">Every week</string>
+ 	
+ 	<string name="dialog_save_title">Save</string>
+ 	<string name="dialog_save_message">Save this drawing?</string>
+ 	<string name="dialog_saved_title">Saved</string>
+ 	<string name="dialog_saved_message">Your drawing had been saved :)</string>
+ 	
+ 	<string name="dialog_sdcard_title">Opps</string>
+ 	<string name="dialog_sdcard_message">Please make sure SD card mounted and readable :)</string>
+ 	
+ 	<string name="dialog_mark_title">Add Location Notification ?</string>
+ 	<string name="dialog_mark_replace">Confirm</string>
+ 	<string name="dialog_mark_clear">Clear</string>
+ 	
+ 	<string name="local_service_started">LBS Service started</string>
+ 	<string name="service_name">GPS service ON</string>
+ 	<string name="local_service_stopped">LBS Service stopped</string>
+ 	<string name="enter_location">Enter this zone</string>
+ 	<string name="leave_location">Leave this zone</string>
+ 	
+ 	<string name="locate_failed">Locate fail(Please enable GPS and LBS service)</string>
+ 	<string name="searching">Searching</string>
+ 	<string name="searching_empty">Doesn\'t have this POI</string>
+ 	<string name="searching_failed">Search fail</string>
+ 	
+ 	<string name="feed_back">Feedback</string>
+ 	<string name="empty_task_title">Task</string>
+ 	<string name="review_text">Today\'s tasks:\u0020</string>
+ 	
+ 	<string name="task_status_today">Today</string>
+ 	<string name="task_status_tomorrow">Tomorrow</string>
+ 	<string name="task_status_suffix">\u0020days</string>
+ 	
+ 	<string name="text_empty">(Empty topic)</string>
+ 	
+ 	<string name="memory_low">Memory Low</string>
+ 	<string name="can_not_edit">Memory Low.You can\'t edit</string>
+ 	<string name="notify_title">Coming to do</string>
+ 	<string name="notify_description">Now to do</string>
+ 	
+ 	<string name="record_error">Please manually refresh</string>
+ 	<string name="time_length">(Time length)</string>
+ 	
+ 	<string name="goal_alarm">Time\'s up</string>
+ 	<string name="max">(Total)</string>
+ 	<string name="min">(Count)</string>
+ 	<string name="unit_hint">Counts</string>
+ 	<string name="mininute_short">MINs</string>
+ 	<string name="hour_short">Hours</string>
+	<string name="hour_pular">Hour</string>
+ 	<string name="goal_name">(Name)</string>
+ 	
+ 	<string name="remains">Remains</string>
+ 	<string name="scenario_tilte_default">Scenario tag</string>
+ 	
+ 	<string name="alarm_toast_prefix">Alarm at\u0020</string>
+ 	<string name="alarm_toast_suffix">\u0020later</string>
+ 	
+ 	<string name="alarm_toast_cancel">Alarm turns off</string>
+ 	
+ 	<string name="widget_title_hint">No task today</string>
+ 	
+ 	<string name="click_task_view_hint">Long click to add element here</string>
+</resources>

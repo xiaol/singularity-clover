@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/mainlayout" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<com.google.android.maps.MapView
+		android:id="@+id/mapview" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:clickable="true"
+		android:apiKey="0OWU9OE0eWHjPpQDNaSBc1PjfRpISJBGNvhkLng" />
+
+	<CheckBox
+		android:id="@+id/mapview_active_mark"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:onClick="onBtnActive"
+		android:button="@drawable/map_view_check_active_bg"
+		/>
+		
+	<ImageButton
+		android:id="@+id/mapview_search"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:onClick="onBtnSearch"
+		/>
+		
+	<ImageButton
+		android:id="@+id/mapview_location"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/mapview_search"
+		android:layout_alignLeft="@+id/mapview_search"
+		android:onClick="onBtnLocation"
+		/>
+	
+	<ImageButton
+		android:id="@+id/mapview_layer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:onClick="onBtnMapMode"
+		/>
+		
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  	
+  <ImageView
+  	android:id="@+id/taskoverview_list_item_records"	
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_centerInParent="true"
+  	android:src="@drawable/task_overview_record_background"
+  	/>
+  	
+  <TextView
+  	android:id="@+id/taskoverview_list_item_task_name"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_toLeftOf="@+id/taskoverview_list_item_vertical_divider"
+  	android:layout_alignParentTop="true"
+  	android:text="Name"
+  	android:textStyle="bold"
+  	android:textSize="18sp"
+  	android:typeface="serif"
+  	android:textColor="@color/task_text_color"
+  	android:maxWidth="200dp"
+  	android:ellipsize="marquee"
+  	android:singleLine="true"
+  	android:layout_marginTop="5dp"
+  	android:layout_marginRight="5dp"
+  	android:gravity="center"
+  	/>
+  	
+  <TextView
+  	android:id="@+id/taskoverview_list_item_task_record_brief"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_toLeftOf="@+id/taskoverview_list_item_vertical_divider"
+  	android:layout_below="@+id/taskoverview_list_item_task_name"
+  	android:text="record brief"
+  	android:textSize="12sp"
+  	android:typeface="serif"
+  	android:textColor="@color/task_text_color"
+  	android:maxWidth="200dp"
+  	android:ellipsize="marquee"
+  	android:singleLine="true"
+  	android:layout_marginTop="5dp"
+  	android:layout_marginRight="5dp"
+  	android:gravity="center"
+  	/>
+  	
+  <CheckBox
+  	android:id="@+id/taskoverview_list_item_task_obj_checklist"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_alignBottom="@+id/taskoverview_list_item_notification"
+  	android:button="@drawable/task_item_obj_check_bg"
+  	/>	
+  <TextView
+  	android:id="@+id/taskoverview_list_item_task_obj_content"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_toRightOf="@+id/taskoverview_list_item_task_obj_checklist"
+  	android:layout_alignBottom="@+id/taskoverview_list_item_task_obj_checklist"
+  	android:layout_marginBottom="6dp"
+  	android:text="checklist"
+  	android:textSize="12sp"
+  	android:typeface="serif"
+  	android:textColor="@color/task_text_color"
+  	android:maxWidth="100dp"
+  	android:ellipsize="marquee"
+  	android:singleLine="true"
+  	android:gravity="center"
+  	/>
+  		
+  <ImageView
+  	android:id="@+id/taskoverview_list_item_notification"	
+  	android:layout_width="24dp"
+  	android:layout_height="24dp"
+  	android:layout_below="@+id/taskoverview_list_item_task_record_brief"
+  	android:layout_alignRight="@+id/taskoverview_list_item_task_name"
+  	android:src="@drawable/task_overview_alarm_icon"
+  	/>
+  	
+  <ImageView
+  	android:id="@+id/taskoverview_list_item_periodic"	
+  	android:layout_width="24dp"
+  	android:layout_height="24dp"
+  	android:layout_alignTop="@+id/taskoverview_list_item_notification"
+  	android:layout_toLeftOf="@+id/taskoverview_list_item_notification"
+  	android:src="@drawable/task_overview_periodic_icon"
+  	/>
+  	
+  <ImageView
+  	android:id="@+id/taskoverview_list_item_image_date"	
+  	android:layout_width="24dp"
+  	android:layout_height="24dp"
+  	android:layout_alignTop="@+id/taskoverview_list_item_periodic"
+  	android:layout_toLeftOf="@+id/taskoverview_list_item_periodic"
+  	android:src="@drawable/task_overview_incoming_icon"
+  	/>
+  
+   <TextView
+  	android:id="@+id/taskoverview_list_item_text_date"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_alignBaseline="@+id/taskoverview_list_item_image_date"
+  	android:layout_toLeftOf="@+id/taskoverview_list_item_image_date"
+  	android:layout_alignBottom="@+id/taskoverview_list_item_image_date"
+  	android:layout_marginBottom="6dp"
+  	android:textSize="10sp"
+  	android:text ="5 days"
+  	android:typeface="serif"
+  	android:textColor="@color/task_text_color"
+  	/>
+  	
+   <ImageView
+  	android:id="@+id/taskoverview_list_item_vertical_divider"
+  	android:layout_width="wrap_content"
+  	android:layout_height="90dp"
+  	android:layout_toLeftOf="@+id/taskoverview_list_item_page_count"
+  	android:background="@drawable/task_overview_vertical_divider"
+  	/> 	
+  	
+  <TextView
+  	android:id="@+id/taskoverview_list_item_page_count"
+  	android:layout_width="40dp"
+  	android:layout_height="wrap_content"
+  	android:layout_alignParentRight="true"
+  	android:layout_alignBaseline="@+id/taskoverview_list_item_task_name"
+  	android:textSize="16sp"
+  	android:text ="35"
+  	android:typeface="serif"
+  	android:gravity="center|top"
+  	android:textColor="@color/task_text_color"
+  	/>
+  	
+  <com.singularity.clover.activity.entity.ListItemOBJView
+  	android:id="@+id/taskoverview_list_item_objectives"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_alignBottom="@+id/taskoverview_list_item_vertical_divider"
+  	android:layout_alignParentLeft="true"
+  	android:visibility="gone"
+  	/>
+  		
+</RelativeLayout>

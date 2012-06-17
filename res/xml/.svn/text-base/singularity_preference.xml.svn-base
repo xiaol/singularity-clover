@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:key="about_info" android:title="@string/about_title"><Preference android:key="about_info" android:summary="@string/about_info" android:title="@string/about_info_title"></Preference><Preference android:summary="6leaves.com" android:title="@string/about_website" android:key="about_us"></Preference><Preference android:key="feed_back" android:title="@string/feed_back" android:summary="Binxiaoking@126.com"></Preference>
+</PreferenceCategory>
+
+
+</PreferenceScreen>

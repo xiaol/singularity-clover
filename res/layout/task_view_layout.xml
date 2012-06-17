@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/task_view_layout"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="horizontal">
+  	
+	<com.singularity.clover.util.drag.DragScrollView 
+		android:id="@+id/task_view_framelayout"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:fillViewport="true"
+		>
+		<com.singularity.clover.util.drag.DragVerticalScrollView
+		android:id="@+id/task_view_framelayout_vertical"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:fillViewport="true"
+		>
+		
+		<FrameLayout
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			>
+			<com.singularity.clover.util.drag.DragLayer
+				android:id="@+id/task_view_drag_layer"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="#ffffff"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				>
+				<ImageView
+					android:id="@+id/task_view_drop_indicator"
+					android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					android:background="@drawable/edit_box_edit"
+					android:visibility="gone"
+					/>
+				
+			</com.singularity.clover.util.drag.DragLayer>
+		
+			<com.singularity.clover.util.drag.DragDeleteZone
+				android:id="@+id/task_view_drag_delete_zone"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/task_view_rubbish_can"
+				android:layout_gravity="left|bottom"
+				android:visibility="gone"
+			/>
+		</FrameLayout>
+		</com.singularity.clover.util.drag.DragVerticalScrollView>
+	</com.singularity.clover.util.drag.DragScrollView>
+		
+    
+	<RelativeLayout
+	  	android:id="@+id/task_view_menu"
+	  	android:layout_width="wrap_content"
+	  	android:layout_height="wrap_content"
+	  	android:layout_alignParentBottom="true"
+	  	android:visibility="gone"
+	  	>
+	  	<ImageButton
+ 			android:id="@+id/task_view_text_add"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_alignParentLeft="true"
+ 			android:layout_alignParentBottom="true"
+ 			android:background="@drawable/task_view_button_add_text_bg"
+ 			android:onClick="onAddTextRecord"
+ 			/>	
+ 				
+ 		<ImageButton
+ 			android:id="@+id/task_view_objective_add"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@+id/task_view_text_add"
+ 			android:layout_alignParentBottom="true"
+ 			android:background="@drawable/task_view_button_add_objective_bg"
+ 			android:onClick="onAddOBJ"
+ 			/>
+ 		
+ 		<ImageButton
+ 			android:id="@+id/task_view_record_add"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@+id/task_view_objective_add"
+ 			android:layout_alignParentBottom="true"
+ 			android:background="@drawable/task_view_button_add_record_bg"
+ 			android:onClick="onAddRecord"
+ 			/>	
+  	
+  		<ImageView
+  			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_alignParentBottom="true"
+ 			android:src="@drawable/task_view_menu_front"
+ 			android:clickable="false"
+ 			/>
+  	</RelativeLayout>  
+</RelativeLayout>

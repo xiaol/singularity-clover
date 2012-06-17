@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/whiteboard">
+
+	<com.singularity.clover.activity.record.WhiteboardView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/whiteboard_canvas">
+	</com.singularity.clover.activity.record.WhiteboardView>
+
+	<CheckBox android:id="@+id/whiteboard_checkbox_move"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:checked = "false" android:onClick="onMove"
+		android:button="@drawable/whiteboard_check_move_bg"
+	></CheckBox>
+	
+	<CheckBox android:id="@+id/whiteboard_checkbox_preview"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		android:layout_alignParentRight="true"
+		android:layout_above="@+id/whiteboard_checkbox_move"
+		android:checked = "false" android:onClick="onPreview"
+		android:button="@drawable/whiteboard_check_preview_bg"
+	></CheckBox>
+	
+	<ImageButton 
+		android:id="@+id/whiteboard_button_save"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/whiteboard_button_save_bg"
+		android:onClick="onSave">
+	</ImageButton>
+	
+		
+	<!-- <ImageButton 
+		android:id="@+id/whiteboard_button_delete"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_above="@+id/whiteboard_button_save" 
+		android:layout_alignLeft="@+id/whiteboard_button_save"
+		android:background="@drawable/whiteboard_button_delete_bg"
+		android:onClick="onDelete"
+		android:visibility="gone"/> -->
+
+
+		
+		<RadioGroup android:id="@+id/whiteboard_tools_menu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true" 
+			android:background="#00ffffff"
+			android:orientation="horizontal"
+			>
+				
+			<RadioButton android:id="@+id/whiteboard_check_pen_black"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:checked="true"
+				android:button="@drawable/whiteboard_check_pen_black_bg" />
+	
+			<RadioButton android:id="@+id/whiteboard_check_pen_red"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:button="@drawable/whiteboard_check_pen_red_bg" />
+	
+			<RadioButton android:id="@+id/whiteboard_check_pen_green"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:button="@drawable/whiteboard_check_pen_green_bg" />
+				
+			<RadioButton android:id="@+id/whiteboard_check_text"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:button="@drawable/whiteboard_check_text_bg"/>
+	
+			<RadioButton android:id="@+id/whiteboard_check_eraser"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content" 
+				android:button="@drawable/whiteboard_check_eraser_bg"/>
+	
+		</RadioGroup>
+	<ImageView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/whiteboard_tools_menu"
+			android:layout_alignWithParentIfMissing="true"
+			android:layout_marginBottom="3dp"
+			android:background="@drawable/record_divider_3"
+		/>
+	<RelativeLayout android:id="@+id/whiteboard_edit_text_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="160dp"
+		android:layout_alignParentTop="true"
+		android:visibility="gone">
+		
+		<EditText android:id="@+id/whiteboard_edit_text"  
+		        android:layout_width="fill_parent" 
+		        android:layout_height="fill_parent" 
+		        android:textSize="20sp" />
+		        
+	    <Button android:id="@+id/whiteboard_confirmButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/confirm_button"
+	            android:layout_toLeftOf="@+id/whiteboard_cancelButton"
+	            android:layout_alignTop="@+id/whiteboard_cancelButton"
+	           	android:onClick="onEditConfirm"/>
+	            
+	    <Button android:id="@+id/whiteboard_cancelButton"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/cancel_button"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentBottom="true"
+	            android:onClick="onEditCancel"/>
+	</RelativeLayout>
+
+</RelativeLayout>

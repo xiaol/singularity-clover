@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/Singularity/!svn/ver/43/SingularityV2.0/res/layout
+END
+calendar_date_item_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/Singularity/!svn/ver/40/SingularityV2.0/res/layout/calendar_date_item_layout.xml
+END
+task_view_objective_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Singularity/!svn/ver/54/SingularityV2.0/res/layout/task_view_objective_layout.xml
+END
+task_view_item_group_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/Singularity/!svn/ver/54/SingularityV2.0/res/layout/task_view_item_group_layout.xml
+END
+whiteboard_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/whiteboard_layout.xml
+END
+taskoverview_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/taskoverview_layout.xml
+END
+balloon_overlay.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/Singularity/!svn/ver/55/SingularityV2.0/res/layout/balloon_overlay.xml
+END
+task_view_durable_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Singularity/!svn/ver/54/SingularityV2.0/res/layout/task_view_durable_layout.xml
+END
+scenariooverview_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/Singularity/!svn/ver/26/SingularityV2.0/res/layout/scenariooverview_layout.xml
+END
+taskoverview_scenario_dialog_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/Singularity/!svn/ver/53/SingularityV2.0/res/layout/taskoverview_scenario_dialog_layout.xml
+END
+task_view_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/Singularity/!svn/ver/54/SingularityV2.0/res/layout/task_view_layout.xml
+END
+action_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/Singularity/!svn/ver/51/SingularityV2.0/res/layout/action_item.xml
+END
+mapview_mark_dialog_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/mapview_mark_dialog_layout.xml
+END
+taskoverview_list_item_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/taskoverview_list_item_layout.xml
+END
+recordoverview_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/recordoverview_layout.xml
+END
+note_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/Singularity/!svn/ver/50/SingularityV2.0/res/layout/note_layout.xml
+END
+map_view_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/map_view_layout.xml
+END
+task_view_basic_info_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/task_view_basic_info_layout.xml
+END
+calendar_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/calendar_layout.xml
+END
+taskoverview_delete_task_dialog_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/Singularity/!svn/ver/53/SingularityV2.0/res/layout/taskoverview_delete_task_dialog_layout.xml
+END
+task_view_record_text_item_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/task_view_record_text_item_layout.xml
+END
+calendar_wizard_mode_panel_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/Singularity/!svn/ver/53/SingularityV2.0/res/layout/calendar_wizard_mode_panel_layout.xml
+END
+taskoverview_delete_scenario_dialog_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/Singularity/!svn/ver/53/SingularityV2.0/res/layout/taskoverview_delete_scenario_dialog_layout.xml
+END
+task_view_checkable_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Singularity/!svn/ver/54/SingularityV2.0/res/layout/task_view_checkable_layout.xml
+END
+primary_view_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/Singularity/!svn/ver/56/SingularityV2.0/res/layout/primary_view_layout.xml
+END
+quickaction.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/Singularity/!svn/ver/51/SingularityV2.0/res/layout/quickaction.xml
+END
+task_view_numeric_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Singularity/!svn/ver/51/SingularityV2.0/res/layout/task_view_numeric_layout.xml
+END

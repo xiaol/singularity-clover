@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ 	<string name="app_name">随手做</string>
+ 	
+ 	<string name="scenario_go_out">计划</string>
+    <string name="scenario_at_home">地点</string>
+    <string name="scenario_appointment">人物</string>
+    
+    <string name="confirm_button">确定</string>
+    <string name="cancel_button">取消</string>
+    <string name="delete_button">删除</string>
+    <string name="save_button">保存</string>
+    <string name="yes_button">是</string>
+    <string name="no_button">不</string>
+    <string name="ok_button">好的</string>
+    <string name="delay_button">延后十分钟</string>
+    
+    <string name="date_button">选取日期</string>
+    <string name="deadline_button">选取截止日期</string>
+    <string name="next_button">下一步</string>
+    <string name="periodic_button">选取周期</string>
+    <string name="alarm_button">标注闹钟</string>
+    
+    <string name="task_overview_delete_task_title">将任务及其包含信息同时删除 ?</string>
+    <string name="task_overview_delete_scenario_title">是否确定删除情境下的所有任务 ?</string>
+    
+    <string name="task_view_basic_info_date">日期:\u0020 </string>
+    <string name="task_view_basic_info_date_to">\u0020 到\u0020 </string>
+    <string name="task_view_basic_info_alarm">下一个闹钟:\u0020 </string>
+    <string name="task_view_basic_info_periodic">下一个周期:\u0020 </string>
+    <string name="task_view_basic_info_hint">点击这里编辑基本信息.</string>
+     <string name="task_view_basic_info_today">今天</string>
+     <string name="task_view_title">(标题)</string>
+    
+    <string name="scenario_dialog_name_hint">(情境名称)</string>
+    
+    <string name="scenario_context_menu_delete">删除情境\u0020 </string>
+    <string name="scenario_context_menu_edit">编辑情境\u0020 </string>
+    <string name="scenario_context_menu_add">添加新的情境\u0020 </string>
+    <string name="scenario_context_menu_title">情境</string>
+    <string name="scenario_context_menu_location">地图位置</string>
+    
+    <string name="calendar_overview_hint">该日期没有任务</string>
+    <string name="scenario_color_picker_title">选取一个颜色:)</string>
+    
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+	<string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+    
+    <string-array name = "proverb_array">
+ 		<item>不积跬步无以至千里.</item>
+ 		<item>你热爱生命?\n\t那么别浪费时间\n\t因为时间是组成生命的材料.</item>
+ 		<item>欲速则不达.</item>
+ 		<item>孔子曰：\n\t内省不疚 夫何惧何忧.</item>
+ 		<item>不要为失去太阳哭泣,否则你也会错过群星.</item>
+ 		<item>生命是一次伟大的冒险否则的话它还能是什么呢?</item>
+ 		<item>思考.</item>
+ 		<item>我们获得知识的速度远远快于我们获得智慧.</item>
+ 		<item>你从不惧怕明天\n\t因为你看到了昨天并热爱今天.</item>
+ 		<item>每用一分钟时间整理\n\t将会赚取一小时.</item>
+ 		<item>耐心的准备\n\t但当时机成熟之时\n\t立即行动.</item>
+ 		<item>时间诉说着.</item>
+ 		<item>要完成伟大的事\n\t两点是必须的\n\t一个计划, 和不太充足的时间.</item>
+ 		<item>在梦中规划蓝图\n\t在白天付诸行动.</item>
+ 		<item>时间就是金钱我的朋友\n\t请耐心的去收集.</item>
+ 		<item>道.</item>
+ 		<item>今天的任务是改进我\n\t请告诉我们您的想法.</item>
+ 	</string-array>
+ 	
+ 	<string name="note_hint">长摁进行编辑.\n撕开右上角添加子标题.</string>
+ 	
+ 	<string name="about_title">关于我们</string>
+ 	<string name="about_website">网站</string>
+ 	<string name="about_info">随手做是一款简单实用的生活管理工具.</string>
+ 	<string name="about_info_title">随手做</string>
+ 	
+ 	<string name="toast_calendar_notification_single_tap">长摁来选取闹钟</string>
+ 	<string name="toast_calendar_mark_day_please">请先选择一个日期</string>
+ 	<string name="toast_calendar_periodic_prefix">每\u0020 </string>
+ 	<string name="toast_calendar_periodic_suffix">\u0020 天</string>
+ 	<string name="toast_calendar_periodic_hint">请选在起始日期之后的日期</string>
+ 	<string name="toast_calendar_periodic_hint2">周期为起始日期与所选日期的间隔</string>
+ 	<string name="toast_calendar_notificaiont_before_today_prefix">今天是\u0020 </string>
+ 	<string name="toast_calendar_periodic_month_hint">每月</string>
+ 	<string name="toast_calendar_periodic_week_hint">每周</string>
+ 	
+ 	<string name="dialog_save_title">保存</string>
+ 	<string name="dialog_save_message">保存这个白板?</string>
+ 	<string name="dialog_saved_title">已保存</string>
+ 	<string name="dialog_saved_message">你的白板已保存 :)</string>
+ 	
+ 	<string name="dialog_sdcard_title">提示</string>
+ 	<string name="dialog_sdcard_message">请确定SD卡已挂载并可读 :)</string>
+ 	
+ 	 <string name="dialog_mark_title">添加位置提醒 ?</string>
+ 	<string name="dialog_mark_replace">确\u0020定</string>
+ 	<string name="dialog_mark_clear">清\u0020除</string>
+ 	
+ 	<string name="local_service_stopped">位置服务关闭</string>
+ 	<string name="local_service_started">GPS服务开启</string>
+ 	<string name="enter_location">进入这个区域</string>
+ 	<string name="leave_location">离开这个区域是</string>
+ 	
+ 	<string name="locate_failed">定位失败(请打开位置服务和GPS)</string>
+ 	<string name="searching">查找中</string>
+ 	<string name="searching_empty">没有这个位置信息</string>
+ 	<string name="searching_failed">查找失败</string>
+ 	
+ 	<string name="feed_back">反馈问题</string>
+ 	<string name="empty_task_title">任务</string>
+ 	<string name="review_text">今日任务数:\u0020</string>	
+ 	
+ 	<string name="task_status_today">今天</string>
+ 	<string name="task_status_tomorrow">明天</string>
+ 	<string name="task_status_suffix">\u0020天</string>
+ 	
+ 	<string name="text_empty">空主题</string>
+ 	<string name="memory_low">内存不足</string>
+ 	<string name="can_not_edit">内存不足。不能进行编辑</string>
+ 	<string name="notify_title">提醒任务</string>
+ 	<string name="notify_description">现在着手做</string>
+ 	
+ 	<string name="record_error">请手动刷新</string>
+ 	<string name="time_length">(时间长度)</string>
+ 	
+ 	<string name="goal_alarm">记时时间点抵达</string>
+ 	<string name="max">(总数)</string>
+ 	<string name="min">(数量)</string>
+ 	<string name="unit_hint">计数</string>
+ 	<string name="mininute_short">分钟</string>
+ 	<string name="hour_short">小时</string>
+ 	<string name="hour_pular">小时</string>
+ 	<string name="goal_name">(内容)</string>
+ 	
+ 	<string name="remains">剩余</string>
+ 	<string name="scenario_tilte_default">情境标签</string>
+ 	 
+ 	<string name="alarm_toast_prefix">闹钟于\u0020</string>
+ 	<string name="alarm_toast_suffix">\u0020后</string>
+ 	<string name="alarm_toast_cancel">闹钟关闭</string>
+ 	
+ 	<string name="widget_title_hint">今天没有任务</string>
+ 	
+ 	<string name="click_task_view_hint">长按在这里添加信息元素</string>
+</resources>

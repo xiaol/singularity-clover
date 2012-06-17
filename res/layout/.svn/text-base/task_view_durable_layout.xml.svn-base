@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.singularity.clover.util.drag.DragTextViewGroup
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/task_view_durable_layout"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  
+  <ImageButton
+  	android:id="@+id/task_view_durable_time_ctrl"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_durable_button_time_ctrl_bg"
+  	/>
+  	
+ <FrameLayout
+ 	android:id="@+id/task_view_durable_process"
+ 	android:layout_weight="1"
+  	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content"
+   	android:layout_gravity="center_vertical"
+   	android:visibility="gone"
+   	>
+   	  <TextView
+	   	android:id="@+id/task_view_durable_process_text"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_gravity="center"
+	   	android:textColor="#ff000000"
+	   	/>
+	   	
+	  <ImageView
+	   	android:id="@+id/task_view_durable_process_background"
+	   	android:layout_width="150dp"
+	   	android:layout_height="wrap_content"
+	   	android:background="@drawable/task_view_numeric_process"
+	   	android:layout_gravity="bottom"
+	   	/>  
+	  
+	  <ImageView
+	   	android:id="@+id/task_view_durable_process_indicator"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:src="@drawable/task_view_numeric_process_indicator"
+	   	android:layout_gravity="top"
+	   	/>
+	   	
+  
+  </FrameLayout>
+  
+  <TextView
+  	android:id="@+id/task_view_durable_text"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:text="Time length:"
+  	android:textStyle="bold"
+  	android:layout_gravity="center_vertical"
+  	android:textColor="#ff000000"
+  	/>
+  	
+  <EditText
+  	android:id="@+id/task_view_durable_max"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:longClickable="false"
+  	android:layout_gravity="center_vertical"
+  	android:inputType="number"
+  	android:text="15"
+  	android:background="@drawable/task_view_edit_bg"
+  	/>
+  	
+  <ImageButton
+  	android:id="@+id/task_view_durable_unit"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_durable_button_unit_mins_bg"
+  	/>
+  		
+  <ImageButton
+  	android:id="@+id/task_view_durable_shortcut"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_durable_button_shortcut_bg"
+  	/>
+  
+  <ImageButton
+  	android:id="@+id/task_view_durable_remove"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  	android:layout_gravity="center_vertical"
+  	android:background="@drawable/task_view_numeric_button_remove_bg"
+  	android:visibility="gone"
+  	android:onClick="onOBJRemove"
+  	/>
+  	
+</com.singularity.clover.util.drag.DragTextViewGroup>

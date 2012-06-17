@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="alarm_enabled">#66FF00</color>
+<color name="alarm_disabled">#FF6666</color>
+
+<color name="widget_title">#2f302f</color>
+<color name="widget_description">#5d5f5d</color>
+
+<color name="light_green">#ff20f90a</color>
+<color name="dark_green">#ff109f01</color>
+<color name="green">#ff12c700</color>
+<color name="light_white">#ffeef1ee</color>
+<color name="light_gray">#ff393439</color>
+<color name="gray">#ff9c9e9c</color>
+<color name="orange">#ff6a28</color>
+<color name="black">#000000</color>
+
+<color name="finance">#f90611</color> <!-- red -->
+<color name="entertainment">#e40598</color> <!-- violet lake -->
+<color name="life">#0530d9</color> <!-- dark blue -->
+<color name="meeting">#04d3ff</color> <!-- cyan -->
+<color name="work">#9923f4</color> <!-- purple -->
+<color name="date">#ff6a28</color> <!-- orange -->
+<color name="study">#d4e107</color> <!-- yellow -->
+<color name="health">#4ef60c</color> <!-- green -->
+<color name="sport">#1a52f1</color> <!-- azure -->
+<color name="unCategoried">#9c9e9c</color> <!-- light gray -->
+
+<color name="goal">#e00dec</color>
+<color name="cycle">#04d3ff</color>
+<color name="alarm">#f9700f</color>
+
+<color name="status_upcoming">#fff9d52b</color> <!-- light orange -->
+
+<color name="transparent">#00ffffff</color>
+
+<color name="whiteboard_bg">#ffe6e6e6</color>
+<color name="dark_red">#ffbf0000</color>
+<color name="blue">#ff0000ff</color>
+<color name="dark_green_2">#ff009245</color>
+<color name="sky_blue">#ffe0e4f4</color>
+<color name="sky_dark_blue">#ff4198B8</color>
+<color name="note_gray">#ff999999</color>
+
+<color name="task_date_green">#ff8CC63F</color>
+<color name="task_date_red">#ffff0000</color>
+<color name="task_text_color">#ff000000</color>
+
+<color name="task_item_1">#17ff0000</color>
+<color name="task_item_2">#17FCEE21</color>
+<color name="task_item_3">#ffE3F5DE</color>
+<color name="task_item_4">#174798ED</color>
+
+<color name="gridview_decorate_color">#ff00ADDC</color>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	>
+	
+	<LinearLayout
+		android:id="@+id/task_view_objectives_layout"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="#e0e4f4"
+		android:focusable="true">
+			
+		<LinearLayout
+			android:id="@+id/task_view_objectives_group"
+			android:layout_weight="1"
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="#cedbe0"
+			>
+	
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:visibility="gone"
+			/>
+		
+		</LinearLayout>
+		
+		<RelativeLayout
+		  	android:layout_weight="4"
+		  	android:layout_width="fill_parent"
+		  	android:layout_height="fill_parent">
+		  	
+	 		<ImageButton
+	 			android:id="@+id/task_view_add_checkable_obj"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_centerVertical="true"
+	 			android:background="@drawable/task_view_button_add_checkable_bg"
+	 			android:onClick="onCheckable"
+	 			/>
+	 		
+	 		<ImageButton
+	 			android:id="@+id/task_view_add_numeric_obj"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_centerVertical="true"
+	 			android:layout_toRightOf="@+id/task_view_add_checkable_obj"
+	 			android:background="@drawable/task_view_button_add_numeric_bg"
+	 			android:onClick="onNumeric"
+	 			/>
+	 		
+	 		<ImageButton
+	 			android:id="@+id/task_view_add_durable_obj"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_centerVertical="true"
+	 			android:layout_toRightOf="@+id/task_view_add_numeric_obj"
+	 			android:background="@drawable/task_view_button_add_durable_bg"
+	 			android:onClick="onDurable"
+	 			/>	
+	 			
+	 		<ImageButton
+	 			android:id="@+id/task_view_confirm_objective"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_centerVertical="true"
+	 			android:layout_toRightOf="@+id/task_view_add_durable_obj"
+	 			android:background="@drawable/task_view_button_objective_confirm_bg"
+	 			android:onClick="onOBJConfirm"
+	 			/>	
+	 			
+	 		<ImageButton
+	 			android:id="@+id/task_view_cancel_objective"
+	 			android:layout_width="wrap_content"
+	 			android:layout_height="wrap_content"
+	 			android:layout_centerVertical="true"	
+	 			android:layout_toRightOf="@+id/task_view_confirm_objective"
+	 			android:background="@drawable/task_view_button_objective_cancel_bg"
+	 			android:onClick="onOBJCancel"
+	 			/>
+	  	
+	  	</RelativeLayout>  
+	    
+	</LinearLayout>
+</ScrollView>

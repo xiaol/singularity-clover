@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/Singularity/!svn/ver/36/SingularityV2.0/res/drawable
+END
+whiteboard_button_attachto_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/Singularity/!svn/ver/15/SingularityV2.0/res/drawable/whiteboard_button_attachto_bg.xml
+END
+whiteboard_check_move_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Singularity/!svn/ver/19/SingularityV2.0/res/drawable/whiteboard_check_move_bg.xml
+END
+record_divider.xml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/Singularity/!svn/ver/16/SingularityV2.0/res/drawable/record_divider.xml
+END
+record_button_text_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/Singularity/!svn/ver/52/SingularityV2.0/res/drawable/record_button_text_bg.xml
+END
+task_view_button_add_checkable_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/Singularity/!svn/ver/48/SingularityV2.0/res/drawable/task_view_button_add_checkable_bg.xml
+END
+whiteboard_check_pen_red_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/Singularity/!svn/ver/19/SingularityV2.0/res/drawable/whiteboard_check_pen_red_bg.xml
+END
+whiteboard_check_pen_black_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/Singularity/!svn/ver/19/SingularityV2.0/res/drawable/whiteboard_check_pen_black_bg.xml
+END
+task_view_numeric_button_minus_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_numeric_button_minus_bg.xml
+END
+task_view_checkable_button_remove_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_checkable_button_remove_bg.xml
+END
+whiteboard_check_preview_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/Singularity/!svn/ver/19/SingularityV2.0/res/drawable/whiteboard_check_preview_bg.xml
+END
+task_view_button_add_record_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/Singularity/!svn/ver/52/SingularityV2.0/res/drawable/task_view_button_add_record_bg.xml
+END
+record_button_voice_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Singularity/!svn/ver/15/SingularityV2.0/res/drawable/record_button_voice_bg.xml
+END
+map_view_check_active_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Singularity/!svn/ver/55/SingularityV2.0/res/drawable/map_view_check_active_bg.xml
+END
+whiteboard_button_save_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/Singularity/!svn/ver/53/SingularityV2.0/res/drawable/whiteboard_button_save_bg.xml
+END
+task_view_edit_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/Singularity/!svn/ver/48/SingularityV2.0/res/drawable/task_view_edit_bg.xml
+END
+whiteboard_check_pen_green_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/Singularity/!svn/ver/19/SingularityV2.0/res/drawable/whiteboard_check_pen_green_bg.xml
+END
+task_item_obj_check_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Singularity/!svn/ver/56/SingularityV2.0/res/drawable/task_item_obj_check_bg.xml
+END
+note_button_add_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/Singularity/!svn/ver/47/SingularityV2.0/res/drawable/note_button_add_bg.xml
+END
+primary_button_mindfragment_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/Singularity/!svn/ver/51/SingularityV2.0/res/drawable/primary_button_mindfragment_bg.xml
+END
+task_view_durable_button_unit_mins_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_durable_button_unit_mins_bg.xml
+END
+task_view_numeric_button_plus_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_numeric_button_plus_bg.xml
+END
+task_button_delete_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/Singularity/!svn/ver/52/SingularityV2.0/res/drawable/task_button_delete_bg.xml
+END
+task_view_durable_button_shortcut_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_durable_button_shortcut_bg.xml
+END
+record_button_whiteboard_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/Singularity/!svn/ver/52/SingularityV2.0/res/drawable/record_button_whiteboard_bg.xml
+END
+task_view_button_add_numeric_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/Singularity/!svn/ver/48/SingularityV2.0/res/drawable/task_view_button_add_numeric_bg.xml
+END
+task_button_bookmark_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/Singularity/!svn/ver/53/SingularityV2.0/res/drawable/task_button_bookmark_bg.xml
+END
+record_button_photo_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Singularity/!svn/ver/54/SingularityV2.0/res/drawable/record_button_photo_bg.xml
+END
+task_view_durable_button_time_ctrl_pause_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/Singularity/!svn/ver/36/SingularityV2.0/res/drawable/task_view_durable_button_time_ctrl_pause_bg.xml
+END
+quickcontact_slider_btn.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/Singularity/!svn/ver/51/SingularityV2.0/res/drawable/quickcontact_slider_btn.xml
+END
+whiteboard_check_eraser_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/Singularity/!svn/ver/19/SingularityV2.0/res/drawable/whiteboard_check_eraser_bg.xml
+END
+task_view_numeric_button_remove_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_numeric_button_remove_bg.xml
+END
+task_view_button_objective_cancel_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_button_objective_cancel_bg.xml
+END
+task_view_durable_button_time_ctrl_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_durable_button_time_ctrl_bg.xml
+END
+balloon_overlay_bg_selector.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/Singularity/!svn/ver/55/SingularityV2.0/res/drawable/balloon_overlay_bg_selector.xml
+END
+whiteboard_check_text_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Singularity/!svn/ver/19/SingularityV2.0/res/drawable/whiteboard_check_text_bg.xml
+END
+task_view_button_add_objective_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/Singularity/!svn/ver/52/SingularityV2.0/res/drawable/task_view_button_add_objective_bg.xml
+END
+task_view_button_add_durable_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/Singularity/!svn/ver/48/SingularityV2.0/res/drawable/task_view_button_add_durable_bg.xml
+END
+task_view_button_objective_confirm_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_button_objective_confirm_bg.xml
+END
+scenario_divider.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/Singularity/!svn/ver/25/SingularityV2.0/res/drawable/scenario_divider.xml
+END
+task_view_button_add_text_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/Singularity/!svn/ver/52/SingularityV2.0/res/drawable/task_view_button_add_text_bg.xml
+END
+whiteboard_button_delete_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/Singularity/!svn/ver/16/SingularityV2.0/res/drawable/whiteboard_button_delete_bg.xml
+END
+task_button_add_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/Singularity/!svn/ver/25/SingularityV2.0/res/drawable/task_button_add_bg.xml
+END
+note_check_expend_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/Singularity/!svn/ver/47/SingularityV2.0/res/drawable/note_check_expend_bg.xml
+END
+primary_check_compass_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/Singularity/!svn/ver/55/SingularityV2.0/res/drawable/primary_check_compass_bg.xml
+END
+scenario_button_add_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/Singularity/!svn/ver/25/SingularityV2.0/res/drawable/scenario_button_add_bg.xml
+END
+primary_button_location_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/Singularity/!svn/ver/55/SingularityV2.0/res/drawable/primary_button_location_bg.xml
+END
+task_view_checkable_check_check_bg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/Singularity/!svn/ver/26/SingularityV2.0/res/drawable/task_view_checkable_check_check_bg.xml
+END
