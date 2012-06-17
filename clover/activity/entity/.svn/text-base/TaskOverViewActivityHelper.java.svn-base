@@ -1,0 +1,203 @@
+package com.singularity.clover.activity.entity;
+
+import java.util.ArrayList;
+
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.NinePatchDrawable;
+import android.os.Handler;
+import android.text.Html;
+import android.text.format.Time;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup.OnHierarchyChangeListener;
+import android.widget.CheckBox;
+
+import com.singularity.clover.Global;
+import com.singularity.clover.R;
+import com.singularity.clover.activity.entity.TaskOverViewActivity.ListAdapter.ViewHolder;
+import com.singularity.clover.database.DBAdapter;
+import com.singularity.clover.entity.EntityPool;
+import com.singularity.clover.entity.objective.CheckableObj;
+import com.singularity.clover.entity.task.Task;
+
+public class TaskOverViewActivityHelper {
+	private TaskOverViewActivity mActivity;
+
+	public TaskOverViewActivityHelper(TaskOverViewActivity mActivity) {
+		this.mActivity = mActivity;
+	}
+
+	protected Drawable adjust(Drawable d, int to) {
+		Bitmap src = ((BitmapDrawable) d).getBitmap();
+		Bitmap bitmap = src.copy(Bitmap.Config.ARGB_8888, true);
+		
+		int count = bitmap.getWidth()*bitmap.getHeight();
+		int[] pixels = new int[count];
+		bitmap.getPixels( pixels, 0 , bitmap.getWidth(),
+				0, 0 , bitmap.getWidth(), bitmap.getHeight());
+		for (int i = 0;i<count;i++)
+			if (match(pixels[i]))
+				pixels[i] = Color.argb(Color.alpha(pixels[i]),
+						Color.red(to), Color.green(to), Color.blue(to));
+		
+		bitmap.setPixels(pixels, 0, bitmap.getWidth(), 
+				0, 0, bitmap.getWidth(), bitmap.getHeight());
+		src = null;
+		return new BitmapDrawable(bitmap);
+	}
+	
+	protected Drawable adjustNinePath(Drawable d,int to){
+		NinePatchDrawable nine = (NinePatchDrawable) d;
+		return nine;
+		/*Î´ÊµÏÖ*/
+	}
+
+	protected boolean match(int pixel) {
+		return /*Color.alpha(pixel) == 255;*/ (Color.red(pixel) == 255 && Color.green(pixel) == 255
+			&& Color.blue(pixel) == 255) || Color.alpha(pixel) >= 128;
+	}
+
+	protected class OnTaskListHierarchyChanged implements 
+										OnHierarchyChangeListener{
+			
+			@Override
+			public void onChildViewRemoved(View parent, View child) {
+				ViewHolder childHolder = (ViewHolder) child.getTag();
+				if(child == mActivity.focusView && childHolder.taskId != mActivity.focusId){
+					childHolder.textName.setBackgroundColor(Color.TRANSPARENT);
+				}
+				
+				if(childHolder.taskId == mActivity.focusId && mActivity.focusView != null){
+					childHolder.textName.setBackgroundResource(R.drawable.text_background);
+					mActivity.focusView = child;
+				}	
+			}
+			
+			@Override
+			public void onChildViewAdded(View parent, View child) {
+				ViewHolder childHolder = (ViewHolder) child.getTag();
+				if(child == mActivity.focusView && childHolder.taskId != mActivity.focusId){
+					childHolder.textName.setBackgroundColor(Color.TRANSPARENT);
+				}
+				
+				if(childHolder.taskId == mActivity.focusId && mActivity.focusView != null){
+					childHolder.textName.setBackgroundResource(R.drawable.text_background);
+					mActivity.focusView = child;
+				}				
+				
+			}
+	}
+	
+	protected class OnScenarioHierarchyChanged implements
+										OnHierarchyChangeListener{
+
+		@Override
+		public void onChildViewAdded(View arg0, View child) {
+			long id = (Long) child.getTag();
+			if(child.getVisibility() == View.INVISIBLE && id != mActivity.mCurrentScenario){
+				child.setVisibility(View.VISIBLE);
+			}
+			
+			if(id == mActivity.mCurrentScenario && 
+					mActivity.mCurrentScenario != Global.INVALIDATE_ID){
+				child.setVisibility(View.INVISIBLE);
+				mActivity.mFocusScenario = child;
+			}
+		}
+
+		@Override
+		public void onChildViewRemoved(View parent, View child) {
+			long id = (Long) child.getTag();
+			if(child.getVisibility() == View.INVISIBLE && id != mActivity.mCurrentScenario){
+				child.setVisibility(View.VISIBLE);
+			}
+			
+			if(id == mActivity.mCurrentScenario && 
+					mActivity.mCurrentScenario != Global.INVALIDATE_ID){
+				child.setVisibility(View.INVISIBLE);
+				mActivity.mFocusScenario = child;
+			}
+		}
+		
+	}
+	
+	protected void setupReview(){
+		Time it = new Time();
+		it.setToNow();
+		it.set(0, 0, 0, it.monthDay, it.month, it.year);
+		long start = it.toMillis(false);
+		it.set(59, 59, 23, it.monthDay, it.month, it.year);
+		long end = it.toMillis(false);
+		String where = " ((start_date BETWEEN " + start + " AND " + end + ")"
+				+ " OR (end_date BETWEEN " + start + " AND " + end + ")"
+				+ " OR (start_date < " + start + " AND end_date > " + end
+				+ ")) ";
+		String sql = "SELECT task._id,task.scenario FROM task WHERE "+ where;
+		Cursor cur = DBAdapter.instance().execQuery(sql, null);
+		ArrayList<Long> scenairoIds = new ArrayList<Long>();
+		int count = 0;
+		if(cur.moveToFirst()){
+			do{
+				if(!scenairoIds.contains(cur.getLong(1))){
+					scenairoIds.add(cur.getLong(1));
+				}
+				count++;
+			}while(cur.moveToNext());
+		}
+		cur.close();
+		mActivity.mReview.setText(Html.fromHtml(mActivity.getText(
+				R.string.review_text)+ "<strong><big>" +Integer.toString(count)+"</big></strong>"));
+		mActivity.mReviewCanvas.setParams(scenairoIds);
+	}
+	
+	protected class OnCheckedChanged implements OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			
+			final CheckBox check = (CheckBox) v;
+			View convertView = (View) v.getParent();
+			TaskOverViewActivity.ListAdapter.ViewHolder holder = 
+				(TaskOverViewActivity.ListAdapter.ViewHolder) convertView.getTag();
+				
+			Task it = (Task) EntityPool.instance().forId(holder.taskId, Task.TAG);	
+			if(check.isChecked()){
+				if(it.getObjCount() != 0){
+					CheckableObj obj = (CheckableObj) it.orderedOBJ(CheckableObj.TAG);
+					if(obj != null){
+						obj.check();
+					}
+					obj = (CheckableObj) it.orderedOBJ(CheckableObj.TAG);
+					if(obj != null){
+						holder.checkItem.setText(obj.getName());
+						holder.checkItem.setVisibility(View.VISIBLE);
+						holder.checklist.setVisibility(View.VISIBLE);
+					}else{
+						holder.checkItem.setVisibility(View.GONE);
+						holder.checklist.setVisibility(View.GONE);
+					}
+					it.processValidate();	
+					holder.viewOBJ.setParams(it.getObjCount(),it.getProcess());
+					holder.viewOBJ.invalidate();
+				}else{
+					holder.checkItem.setVisibility(View.GONE);
+					holder.checklist.setVisibility(View.GONE);
+				}
+				Handler handler = new Handler();
+				handler.postDelayed(new Runnable() {
+					@Override
+					public void run() {
+						check.setChecked(false);
+					}
+				}, 500);
+				
+			}else{
+			}
+		}
+				
+	}
+}
